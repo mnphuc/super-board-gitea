@@ -28,18 +28,18 @@
 In your project folder:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/EricTechPro/super-board/main/get.sh | bash
+curl -fsSL https://raw.githubusercontent.com/mnphuc/super-board-gitea/main/get.sh | bash
 ```
 
 Or as a Claude Code plugin:
 
 ```
-/plugin marketplace add EricTechPro/super-board
+/plugin marketplace add mnphuc/super-board-gitea
 /plugin install super-board@super-board
 ```
 
 > [!NOTE]
-> The plugin ships the skills only. Run `/super-board:super-board onboard` and its 🔍 Checks step adds the guard hooks, scripts and workflows. Needs Claude Code, `gh`, `jq`, bash 3.2+ and Python 3.9+; the installer checks.
+> The plugin ships the skills only. Run `/super-board:super-board onboard` and its 🔍 Checks step adds the guard hooks, scripts and workflows. Needs Claude Code, `gh` (GitHub boards) or `tea` v0.16+ (Gitea boards — `forge: "gitea"`), `jq`, bash 3.2+ and Python 3.9+; the installer checks.
 
 Optional post-run learning can delegate an already installed `calibrate` skill after
 verified selected work completes. It applies only to explicitly permitted existing
@@ -51,7 +51,7 @@ canonical skill files; the package bundles no private skill. See
 ### 1. Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/EricTechPro/super-board/main/get.sh | bash
+curl -fsSL https://raw.githubusercontent.com/mnphuc/super-board-gitea/main/get.sh | bash
 ```
 
 ### 2. Onboard
@@ -60,7 +60,7 @@ curl -fsSL https://raw.githubusercontent.com/EricTechPro/super-board/main/get.sh
 /super-board onboard
 ```
 
-Checks · GitHub · Board · Branch · AGENTS.md · Policies · Bug sources · Review. <kbd>Enter</kbd> takes the recommended answer.
+Checks · Forge (GitHub or Gitea) · Board · Branch · AGENTS.md · Policies · Bug sources · Review. <kbd>Enter</kbd> takes the recommended answer.
 
 ### 3. Run
 
